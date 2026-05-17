@@ -1,5 +1,5 @@
 # Amount of EXP to drop per flower
-exp-per-flower: 2
+exp-per-flower: 5
 
 # A list of possible flower drops.
 # You can generate these Json items using the '/iteminfo <minimum> <maximum>' command.
@@ -28,7 +28,7 @@ drops:
   - '{"type":"DIAMOND_BLOCK","minimum":1,"maximum":4}'
   - '{"type":"BREWING_STAND","minimum":1,"maximum":32}'
   - '{"type":"ENCHANTING_TABLE","minimum":1,"maximum":8}'
-  - '{"type":"EXPERIENCE_BOTTLE","minimum":1,"maximum":16}'
+  - '{"type":"EXPERIENCE_BOTTLE","minimum":10,"maximum":16}'
   - '{"type":"GLASS_BOTTLE","minimum":1,"maximum":32}'
   - '{"type":"NETHER_WART","minimum":1,"maximum":32}'
   - '{"type":"BLAZE_SPAWN_EGG","minimum":1,"maximum":16}'
