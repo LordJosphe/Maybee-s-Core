@@ -30,6 +30,23 @@ custom-crafts:
     default-name: false
     limit: 1
 
+  'Bottle o Enchanting':
+    '1': '{"type":"GLASS"} {"type":"GLASS"} {"type":"GLASS"}'
+    '2': '{"type":"GLASS"} {"type":"LAPIS_LAZULI"} {"type":"GLASS"}'
+    '3': '{"type":"GLASS"} {"type":"GLASS"} {"type":"GLASS"}'
+    craft: '{"type":"EXPERIENCE_BOTTLE"}'
+    default-name: false
+    limit: 64
+  'Team Revive':
+    '1': '{"type":"GOLD_BLOCK"} {"type":"GOLD_BLOCK"} {"type":"GOLD_BLOCK"}'
+    '2': '{"type":"GOLD_BLOCK"} {"type":"DIAMOND_BLOCK"} {"type":"GOLD_BLOCK"}'
+    '3': '{"type":"GOLD_BLOCK"} {"type":"GOLD_BLOCK"} {"type":"GOLD_BLOCK"}'
+    craft: '{"type":"NETHER_STAR","lore":["&7Craft this item to revive a dead team member"]}'
+    default-name: false
+    revive-item: true
+    revive-with-inventory: true
+    limit: -1
+  
   # Example of item that when crafted will revive a team member.
   # Remove '#' symbols to enable.
   #'Team Revive':
