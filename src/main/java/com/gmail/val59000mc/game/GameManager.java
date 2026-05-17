@@ -281,6 +281,20 @@ public class GameManager{
 
 		mapLoader.setWorldsStartGame();
 
+		try {
+        org.bukkit.World overworld = this.getMapLoader().getUhcWorld(org.bukkit.World.Environment.NORMAL);
+        if (overworld != null) {
+            overworld.getWorldBorder().setCenter(10000.0, 10000.0);
+        }
+        
+        org.bukkit.World nether = this.getMapLoader().getUhcWorld(org.bukkit.World.Environment.NETHER);
+        if (nether != null) {
+            nether.getWorldBorder().setCenter(10000.0, 10000.0);
+        }
+    } catch (Exception e) {
+        Bukkit.getLogger().warning("[UHC] Failed to set initial worldborder center: " + e.getMessage());
+    }
+
 		playerManager.startWatchPlayerPlayingThread();
 		Bukkit.getScheduler().runTaskAsynchronously(UhcCore.getPlugin(), new ElapsedTimeThread(this, customEventHandler));
 		Bukkit.getScheduler().runTaskAsynchronously(UhcCore.getPlugin(), new EnablePVPThread(this));
