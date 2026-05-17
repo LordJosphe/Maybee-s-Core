@@ -34,9 +34,10 @@ custom-crafts:
     '1': '{"type":"GLASS"} {"type":"GLASS"} {"type":"GLASS"}'
     '2': '{"type":"GLASS"} {"type":"LAPIS_LAZULI"} {"type":"GLASS"}'
     '3': '{"type":"GLASS"} {"type":"GLASS"} {"type":"GLASS"}'
-    craft: '{"type":"EXPERIENCE_BOTTLE"}'
+    craft: '{"type":"EXPERIENCE_BOTTLE", "amount": 8}'
     default-name: false
     limit: 64
+    
   'Team Revive':
     '1': '{"type":"GOLD_BLOCK"} {"type":"GOLD_BLOCK"} {"type":"GOLD_BLOCK"}'
     '2': '{"type":"GOLD_BLOCK"} {"type":"DIAMOND_BLOCK"} {"type":"GOLD_BLOCK"}'
