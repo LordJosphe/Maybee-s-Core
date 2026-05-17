@@ -34,11 +34,13 @@ public class WorldBorderThread implements Runnable{
 		
 		World overworld = GameManager.getGameManager().getMapLoader().getUhcWorld(World.Environment.NORMAL);
 		WorldBorder overworldBorder = overworld.getWorldBorder();
+		overworldBorder.setCenter(10000.0, 10000.0);
 		overworldBorder.setSize(2*endSize, timeToShrink);
 		
 		World nether = GameManager.getGameManager().getMapLoader().getUhcWorld(World.Environment.NETHER);
 		if (nether != null) {
 			WorldBorder netherBorder = nether.getWorldBorder();
+			netherBorder.setCenter(10000.0, 10000.0);
 			netherBorder.setSize(endSize, timeToShrink);
 		}
 	}
